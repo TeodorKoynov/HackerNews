@@ -5,7 +5,7 @@ import {NavLink} from 'react-router-dom'
 
 const activeStyle = {
     color: 'rgb(187, 46, 31)',
-    // borderBottom: "3px solid",
+    opacity: 1
 }
 
 export default function Nav({toggleTheme}) {

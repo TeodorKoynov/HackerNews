@@ -74,6 +74,7 @@ li {
   font-weight: bold;
   text-decoration: none;
   color: inherit;
+  opacity: 0.55;
 }
 
 .nav li {
