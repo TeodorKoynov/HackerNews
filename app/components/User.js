@@ -1,6 +1,6 @@
 import React from 'react'
 import {useReducer, useEffect} from 'react';
-import queryString from 'query-string'
+import {useSearchParams} from "react-router-dom";
 import {fetchUser, fetchPosts} from '../utils/api'
 import Loading from './Loading'
 import {formatDate} from '../utils/helpers'
@@ -38,8 +38,9 @@ function postReducer(state, action) {
     }
 }
 
-export default function User({location}) {
-    const {id} = queryString.parse(location.search)
+export default function User() {
+    const [searchParams] = useSearchParams();
+    const id = searchParams.get('id');
 
     const [state, dispatch] = useReducer(
         postReducer,

@@ -1,6 +1,6 @@
 import React from 'react'
 import {useReducer, useEffect} from 'react';
-import queryString from 'query-string'
+import {useSearchParams} from "react-router-dom";
 import {fetchItem, fetchPosts, fetchComments} from '../utils/api'
 import Loading from './Loading'
 import PostMetaInfo from './PostMetaInfo'
@@ -33,8 +33,9 @@ function postReducer(state, action) {
     }
 }
 
-export default function Post({location}) {
-    const {id} = queryString.parse(location.search);
+export default function Post() {
+    const [searchParams] = useSearchParams();
+    const id = searchParams.get('id');
     const [state, dispatch] = useReducer(postReducer, {
         post: null,
         loadingPost: true,
