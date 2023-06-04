@@ -21,7 +21,6 @@ function App() {
           <div className={theme}>
             <div className='container'>
               <Nav toggleTheme={toggleTheme} />
-
               <React.Suspense fallback={<Loading />}>
                 <Switch>
                   <Route

@@ -4,14 +4,15 @@ import ThemeContext from '../contexts/theme'
 import {NavLink} from 'react-router-dom'
 
 const activeStyle = {
-    color: 'rgb(187, 46, 31)'
+    color: 'rgb(187, 46, 31)',
+    // borderBottom: "3px solid",
 }
 
 export default function Nav({toggleTheme}) {
     const theme = useContext(ThemeContext)
 
     return (
-        <nav className='row space-between'>
+        <nav className={`navigation row space-between ${theme}`}>
             <ul className='row nav'>
                 <li>
                     <NavLink

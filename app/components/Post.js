@@ -82,6 +82,7 @@ export default function Post({location}) {
                             comment={comment}
                         />
                     )}
+                    {comments.length === 0 && <p className={'info'}>No Comments</p>}
                 </React.Fragment>}
         </React.Fragment>
     )

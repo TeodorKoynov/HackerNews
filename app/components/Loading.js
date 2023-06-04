@@ -2,14 +2,18 @@ import React from 'react'
 import {useState, useEffect} from 'react';
 
 const styles = {
-    content: {
-        fontSize: '35px',
+    wrapper: {
         position: 'absolute',
         left: '0',
         right: '0',
         marginTop: '20px',
+    },
+    content: {
+        fontSize: '35px',
+
         textAlign: 'center',
-    }
+        fontWeight: '500',
+    },
 }
 
 export default function Loading({text = 'Loading', speed = 300}) {
@@ -27,8 +31,10 @@ export default function Loading({text = 'Loading', speed = 300}) {
     }, [text, speed])
 
     return (
-        <p style={styles.content}>
-            {content}
-        </p>
+        <div style={styles.wrapper}>
+            <p style={styles.content}>
+                {content}
+            </p>
+        </div>
     )
 }
