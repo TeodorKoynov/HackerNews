@@ -1,160 +1,165 @@
 html, body, #app {
-  margin: 0;
-  height: 100%;
-  width: 100%;
+    margin: 0;
+    height: 100%;
+    width: 100%;
 }
 
 body {
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
 }
 
 ul {
-  padding: 0;
+    padding: 0;
 }
 
 li {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
 }
 
 .header {
-  margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .dark {
-  color: #DADADA;
-  background: #1c2022;
-  min-height: 100%;
+    color: #DADADA;
+    background: #1c2022;
+    min-height: 100%;
 }
 
 .dark a {
-  color: rgb(203, 203, 203);
+    color: rgb(203, 203, 203);
 }
 
 .link {
-  color: rgb(187, 46, 31);
-  text-decoration: none;
-  font-weight: bold;
+    color: rgb(187, 46, 31);
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .row {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .space-between {
-  justify-content: space-between;
+    justify-content: space-between;
 }
 
 .navigation {
-  padding: 0 2rem;
-  border-radius: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 0 2rem;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .navigation.light {
-  background-color: whitesmoke;
+    background-color: whitesmoke;
 }
 
 .navigation.dark {
-  background-color: #282f31;
+    background-color: #282f31;
 }
 
 .nav {
-  gap: 1.5rem;
+    gap: 1.5rem;
 }
 
 .nav-link {
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;
-  color: inherit;
-  opacity: 0.55;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.55;
 }
 
 .nav li {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
 .btn-clear {
-  border: none;
-  background: transparent;
+    border: none;
+    background: transparent;
 }
 
 .center-text {
-  text-align: center;
+    text-align: center;
 }
 
 .post {
-  margin: 1rem 0;
-  padding: 1rem 2rem;
-  border-radius: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .post.light {
-  background-color: whitesmoke;
+    background-color: whitesmoke;
 }
 
 .post.dark {
-  background-color: #282f31;
+    background-color: #282f31;
 }
 
 .meta-info-light {
-  margin-top: 5px;
-  color: gray;
+    margin-top: 5px;
+    color: gray;
 }
 
 .meta-info-light a {
-  color: black;
+    color: black;
 }
 
 .meta-info-light span {
-  margin: 10px 0;
-  margin-right: 6px;
+    margin: 10px 0;
+    margin-right: 6px;
 }
 
 .meta-info-dark {
-  margin-top: 5px;
-  color: gray;
+    margin-top: 5px;
+    color: gray;
 }
 
 .meta-info-dark a {
-  color: #bebebe;
+    color: #bebebe;
 }
 
 .meta-info-dark span {
-  margin: 10px 0;
-  margin-right: 6px;
+    margin: 10px 0;
+    margin-right: 6px;
 }
 
 .comment {
-  background: rgba(128, 128, 128, 0.1411764705882353);
-  padding: 0.5rem 1.5rem;
-  margin: 0.75rem 0;
-  border-radius: 0.5rem;
+    background: rgba(128, 128, 128, 0.1411764705882353);
+    padding: 0.5rem 1.5rem;
+    margin: 0.75rem 0;
+    border-radius: 0.5rem;
 }
 
 .comment p {
-  margin: 0.5rem 0;
-  opacity: 0.9;
+    margin: 0.5rem 0;
+    opacity: 0.9;
 }
 
 .user-card {
-  padding: 0.5rem 2rem;
+    padding: 0.5rem 2rem;
 }
 
 .user-card p {
-  opacity: 0.95;
+    opacity: 0.95;
 }
 
 .info {
-  font-size: 2rem;
-  text-align: center;
-  font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.active {
+    color: rgb(187, 46, 31);
+    opacity: 1
 }

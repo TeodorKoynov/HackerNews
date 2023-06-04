@@ -3,10 +3,7 @@ import {useContext} from 'react';
 import ThemeContext from '../contexts/theme'
 import {NavLink} from 'react-router-dom'
 
-const activeStyle = {
-    color: 'rgb(187, 46, 31)',
-    opacity: 1
-}
+
 
 export default function Nav({toggleTheme}) {
     const theme = useContext(ThemeContext)
@@ -17,17 +14,14 @@ export default function Nav({toggleTheme}) {
                 <li>
                     <NavLink
                         to='/'
-                        exact
-                        activeStyle={activeStyle}
-                        className='nav-link'>
+                        className={({isActive}) => "nav-link " + (isActive ? ` active` : "")}>
                         Top
                     </NavLink>
                 </li>
                 <li>
                     <NavLink
                         to='/new'
-                        activeStyle={activeStyle}
-                        className='nav-link'>
+                        className={({isActive}) => "nav-link " + (isActive ? ` active` : "")}>
                         New
                     </NavLink>
                 </li>
